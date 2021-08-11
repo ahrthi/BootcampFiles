@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script>
+            function si(p,r,t){
+                return ((p*t*r)/100);
+            }
+           document.write("Simple Interest for 3000,2,3: "+si(3000,2,3))
+           
+           document.write("<br>")
+           
+           function printobj(obj){
+			document.write(JSON.stringify(obj))
+			document.write("<br>")
+		}
+		function pushobj(objarr,obj){
+			objarr.push(obj)
+			printobj(obj)
+		}
+
+		var objarr=[]
+		item={
+			"ItemName":"Books",
+			"Price":246,
+			"Quantity":10,
+			"ItemType":"Educational"
+		}
+		item2={
+			"ItemName":"Pen",
+			"Price":20,
+			"Quantity":100,
+			"ItemType":"Stationary",
+			"Returnale":true
+		}
+		pushobj(objarr,item)
+		pushobj(objarr,item2)
+         </script>
+        <title>simple interest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

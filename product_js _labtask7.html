@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+    <title>Breakpoints - hidden/visible concept</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+        <script>
+            function viewprod(){
+			document.getElementById('prod').style.display='inline';
+		}
+		function hideprod(){
+			document.getElementById('prod').style.display='none';	
+		}
+		function fun(){
+			document.getElementById('info').innerHTML=parseInt(document.getElementById('pr').value)*0.05
+		}
+        </script>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <div style="background-color:yellow;width: 100px;height: 100px;" onmouseover="viewprod()" onmouseout="hideprod()">More about product</div>
+	<div id="prod" style="background-color:yellow;display: none;">
+		Name:Book<br>
+		Price:350
+	</div>
+       <br>
+       <br>
+	Enter Price:
+	<input type="text" id="pr" onkeydown="fun()">
+	<p id="info"></p>
+        
+    </body>
+</html>

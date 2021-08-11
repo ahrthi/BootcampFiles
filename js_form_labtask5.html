@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script>
+            function valcehck(){
+                var name=document.getElementById("name").value;
+                if(name.length<5){
+                    alert('invalid username')
+                    return;
+                }
+            var pwd =document.getElementById('pwd').value;
+			if(pwd.length<=6 || pwd.length>=11){
+				alert('invalid password')
+				return;
+            }
+            var email = document.getElementById('em').value
+            if(email.includes('@')==false){
+                alert('invalid Email ID')
+                return;
+            }
+            document.getElementById('ans').innerHTML="Valid Details"
+        }
+           
+        </script>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form>
+                <table>
+                <tr>  <td>
+                        <label>Enter name:</td>
+                    <td><input type="text" name="name" id="name" required title="enter name"></label></td></tr>
+                
+                <tr>  <td>
+                        <label>Enter Password:</td>
+                    <td><input type="text" name="Pwd"></label></td></tr>
+                
+                <tr>  <td>
+                        <label>Enter Email:</td>
+                    <td><input type="text" name="em" required title="enter a valid mail" ></label></td></tr>
+                <tr>  <td>
+                <input type="button" name="" value="check password" onclick="check()"></td></tr>
+		<p id="ans"></p>
+                 </table>
+            </form></div>
+    </body>
+</html>
