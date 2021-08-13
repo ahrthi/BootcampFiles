@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script>
+            function user()
+            {
+                var data= document.forms["userform"]
+                var username = data["username"].value;
+                
+                    
+                
+                var password=data["password"].value ;
+                if(username.length>=5 && password.length<=7)
+                {
+                alert("Valid")
+            }
+            else{
+                alert("invalid")
+                return;
+            }
+                
+             
+            
+            var email = data['email'].value
+             var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if(email.match(mailformat!=null)){
+                alert('valid')
+                return;
+        }
+    }
+        </script>
+        <title>js2_lab6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div> <form method="POST" action="#" name="userform">
+            Enter user name:
+            <input type="text" name="username" required/><br/>
+            Enter Password:
+            <input type="password" name="password" required/><br />
+            Enter Email:
+            <input type="text" name="email" required/><br />
+            <input type="submit" value="Login" onclick="user()" />
+        </form></div>
+    </body>
+</html>

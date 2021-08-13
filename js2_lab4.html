@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js2_lab4</title>
+</head>
+
+<script>
+    
+        function funcc(){
+        var elis = document.getElementsByTagName('body')
+        var par = document.createElement("div");
+            var textnode=document.createTextNode("This is para text")
+            par.appendChild(textnode)
+            elis[0].appendChild(par)
+            
+            var d=document.getElementsByTagName("div");
+            par = document.createElement("p");       
+            var textnode = document.createTextNode("para1  created");        
+            par.appendChild(textnode); 
+            d[1].appendChild(par);
+            par = document.createElement("p");       
+            var textnode = document.createTextNode("para2 element created");        
+            par.appendChild(textnode); 
+            d[1].appendChild(par);
+        }
+</script>
+<body>
+    <div class="container">
+        <button onclick="funcc()" type="button" value='add a para'>add a para</button>
+      
+    
+    
+    </div>
+</body>
+</html>

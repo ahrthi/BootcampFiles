@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            .bgg{background-color:yellow;
+             width: 100px;
+            height: 100px;}
+        </style>
+        <script>
+            function getelement(){
+                var elements=document.getElementsByTagName("div")
+                for(i=0;i<2;i++){
+                    elements[i].innerHTML="Script"
+                }
+            }
+            function fun(){
+            var data = document.getElementsByClassName('box')
+            for(i=0;i<data.length;i++){
+                data[i].innerHTML="Hi"
+            }
+
+        }
+        </script>
+        <title>JA_2_LAB1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div onclick='fun()'>Hello</div>
+            <p id='mypara' onclick='getelement()' class='bgg'>
+                This is my para
+            </p>
+        
+    </body>
+</html>

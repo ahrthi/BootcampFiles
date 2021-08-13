@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>.box
+            {background-color:yellow;
+             width: 100px;
+            height: 100px;
+            font-size: 30;}
+           
+        </style>
+        <script>
+            function changesty()
+            {
+                var data = document.getElementById("mydiv")
+                data.style.backgroundColor="green"
+                data.style.fontSize="40"
+                data.style.borderStyle="solid"
+                data.style.color="white"
+                
+            }
+        </script>
+        <title>js_2_lab3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id='mydiv' onclick='changesty()' class='box'>
+            Lab task 3</div>
+    </body>
+</html>

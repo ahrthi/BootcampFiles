@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script>
+            function stor(){
+        localStorage.setItem("message","hello")
+        document.write(localStorage.getItem("message")+"<br>")
+        sessionStorage.setItem("message","Hi")
+        document.write(sessionStorage.getItem("message"))
+
+    }
+        </script>
+           
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <button onclick='stor()'>storage</button>>
+    </body>
+</html>

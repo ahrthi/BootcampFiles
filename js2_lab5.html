@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <script>
+   function insertbefore()
+   { 
+     var data=document.getElementById("text").value
+     var element=document.getElementById("list")
+     var li = document.createElement("li")
+     var text = document.createTextNode(data);
+     li.appendChild(text)
+     element.insertBefore(li,element.childNodes[0])
+   }
+   function insertAfter()
+   {
+     var data=document.getElementById("text").value
+     var element=document.getElementById("list")
+     var li = document.createElement("li")
+     var text = document.createTextNode(data)
+     li.appendChild(text)
+     element.append(li)
+   }
+   function remove()
+   {
+       var element=document.getElementById("list")
+       element.removeChild(element.childNodes[0]);
+   }
+   </script>
+        <title>
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+     <input type="text" id="text"/>
+   <input type="button" value="Insert before" onclick="insertbefore()"/>
+   <input type="button" value="Insert after" onclick="insertAfter()"/>
+   <input type='button' value="Remove" onclick='remove()'/>
+   <ul id="list">
+   
+   </ul>
+        
+        
+    </body>
+</html>
